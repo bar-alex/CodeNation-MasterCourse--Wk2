@@ -1,0 +1,14 @@
+h1 {
+    color: blueviolet;
+    font-size: 40px;
+}
+
+.container {
+    background-color: aqua;
+    padding: 20px 10px 20px 10px;
+    box-sizing: border-box;
+}
+
+#loremipsum {
+    background-color: antiquewhite;
+}
