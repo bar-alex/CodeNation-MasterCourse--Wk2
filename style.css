@@ -12,3 +12,47 @@ h1 {
 #loremipsum {
     background-color: antiquewhite;
 }
+
+.square {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    transition: border-radius 2s;
+    transition-timing-function: ease;
+}
+
+.square:hover{
+    border-radius: 15px;
+}
+
+.rectangle {
+    width: 500px;
+    height: 200px;
+    background-color: blue;
+    animation-name: button;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.rectangle:hover{
+    border-radius: 10px;
+}
+
+@keyframes button {
+    0%{
+        background-color: blueviolet;
+        box-shadow: 6px 6px 0 darkslategray;
+    }
+    25%{
+        background-color: aqua;
+        box-shadow: 6px 6px 0 darkslategray;
+    }
+    75%{
+        background-color: whitesmoke;
+        box-shadow: 6px 6px 0 black;
+    }
+    100%{
+        background-color: blueviolet;
+        box-shadow: 6px 6px 0 darkslategray;
+    }
+}

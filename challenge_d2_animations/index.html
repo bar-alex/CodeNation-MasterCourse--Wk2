@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Challenge CSS Transitions</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="button-container" class="gradient">
+        <button id="code-nation" type=”button”>
+            <img src="codenation-logo.png" alt="code nation logo">
+        </button>
+        <button class="socials" type=”button” onclick="setRandColor(0)">Website</button>
+        <button class="socials" type=”button” onclick="setRandColor(1)">Facebook</button>
+        <button class="socials" type=”button” onclick="setRandColor(2)">Twitter</button>
+        <button class="socials" type=”button” onclick="setRandColor(3)">Instagram</button>
+    </div>
+    
+
+    <script>
+
+        const setRandColor = (nthButton) => {
+            //console.log(`executed: setRandColor(${nthButton})`);
+            const randColor = Math.floor(Math.random()*16777215).toString(16);
+            const buttons = document.getElementsByClassName('socials')
+            //console.log(buttons);
+            buttons[nthButton].style.color = `#${randColor}`;
+            //console.log(buttons[nthButton].style);
+        }
+
+    </script>
+
+</body>
+</html>
